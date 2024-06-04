@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/edit.css">
+</head>
+
+<%- include("./partials/header.ejs") %>
+<%- include("./partials/nav.ejs") %>
+<body>
+
+
+    <center><h1>UPDATE CHANGES...!</h1></center>
+    <div class="add">
+        <form class="f" action="/edit/<%= user.id %>" method="get">
+          <label for="name">NAME</label>
+          <input type="text" id="title" name="name" value="<%= user.name %>" required>
+          
+           
+          <label for="email">CATAGORY</label>
+          <select name="" id="cata">
+            <option value="<%= user.email %>">1BHK</option>
+            <option value="<%= user.email %>">2BHK</option>
+            <option value="<%= user.email %>">3BHK</option>
+
+          </select>
+          
+          <label for="address">FLOOR</label>
+          <select name="" id="floor">
+            <option value="<%= user.password %>">1FLOOR</option>
+            <option value="<%= user.password %>">2FLOOR</option>
+            <option value="<%= user.password %>">3FLOOR</option>
+            <option value="<%= user.password %>">4FLOOR</option>
+            <option value="<%= user.password %>">5FLOOR</option>
+            
+
+          </select>
+          <label for="address">FLAT NUMBER</label>
+          <select name="" id="floor" >
+            <option value="<%= user.address %>">101FLAT</option>
+            <option value="<%= user.address %>">102FLAT</option>
+            <option value="<%= user.address %>">103FLAT</option>
+            <option value="<%= user.address %>">104FLAT</option>
+            <option value="<%= user.address %>">105FLAT</option>
+            <option value="<%= user.address %>">106FLAT</option>
+            <option value="<%= user.address %>">107FLAT</option>
+            <option value="<%= user.address %>">108FLAT</option>
+            <option value="<%= user.address %>">109FLAT</option>
+           
+
+          </select>
+          <label for="price">RENTAL PRICE</label>
+          <input type="number" name="price" id="price" value="<%= user.number %>">
+         
+    
+         <div class="sub">
+          <button type="submit">UPDATE</button>
+          </div></form>
+   
+  </div>
+</body>
+<%- include("../partials/footer.ejs") %>
+</html>

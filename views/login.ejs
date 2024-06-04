@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<%- include("./partials/header.ejs") %>
+<body> <center><h1>LOGIN FORM...!</h1></center>
+    <div class="add">
+        <form class="f" action="/login" method="post">
+          <label for="name">UserName</label>
+          <input type="text" id="title" name="adminname" required>
+          
+          <label for="password">password</label>
+          <input type="password" name="password" id="pwd" required>
+         
+          
+         <div class="sub">
+          <button type="submit">LOGIN</button>
+
+          <a href="./signin">NEW REGIS..?</a>
+         </div> 
+        </form>
+      </div>
+      
+    
+    
+</body>
+<%- include("./partials/footer.ejs") %>
+</html>
+
+<style>
+  .title{
+  list-style-type: disc;
+  text-align: center;
+  color: rgb(25, 110, 131);
+  font-weight: 700;
+  text-transform: uppercase;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .snippet{
+    font-size: 20px;
+    color: rgb(206, 226, 217);
+  }
+  
+  button{
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(10, 82, 54);
+    width: auto;
+    padding: 5px;
+    box-shadow: 4px 4px 2px black;
+  }body{
+    /* background: url("https://images.ctfassets.net/wowgx05xsdrr/3TuTq2xQWcJsRBRkHbQSV4/56ed7aeff3e6312f6bcaec268bb7fb44/2019-August-Content-Blog-Headers-Batch-1-CBD-Marketing-4858-MT-v2-_1x.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1500px;
+    margin-top: 50px; 
+    transform: skew(40px);
+    height: 100%;
+  }
+  
+  </style>

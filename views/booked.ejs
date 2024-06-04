@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/booked.css">
+</head>
+<%- include("./partials/header.ejs") %>
+<%- include("./partials/nav.ejs") %>
+<body>
+    <div class="details content">
+        <center><h1>BOOKED DETAILS</h1></center>
+        
+        <div class="content">
+          <table border="2px" >
+            <tr><th>NAME</th>
+            <th>CATAGORY</th>
+            <th>FLOOR</th>
+            <th>FLAT</th>
+            <th>MONTHLY RENTAL</th>
+            <th>ACTIVE</th></tr>
+            <tr>
+    
+              <td><h2></h2></td>
+            <td><p></p></td>
+            <td><p></p></td>
+            <td><p></p></td>
+            <td><p></p></td>
+            <td><div class="operation-btn">
+              <br>
+              <form action="./booking" method="post">
+               <button type="submit" >Remove</button>
+             </form>
+              <form action="" method="edit">
+               <button type="submit" style="background-color: blue;">Updates</button>
+             </form>
+            </div></td>
+          </tr>
+    
+      
+        </table>
+        </div>
+      </div>
+    
+</body>
+<%- include("./partials/footer.ejs") %>
+
+<p>
+</p></html>

@@ -1,0 +1,42 @@
+table{
+    display: flex;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+  }
+
+  table th{
+background-color: rgb(10, 79, 119);
+padding: 8px;
+justify-content: center;
+align-items: center;
+
+  }
+  table tr{
+    background-color: rgb(37, 100, 76);
+    font-size: 20px;
+    text-align: center;
+  }
+  body{
+    background: url("../img/home.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-size: 100%;
+  
+  }
+
+  button{
+    background-color: rgb(175, 12, 12);
+    color: azure;
+    padding: 5px 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 1000;
+  }

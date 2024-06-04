@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/signin.css">
+</head>
+<%- include("./partials/header.ejs") %>
+<body>
+    <center><h1>REGISTER FORM...!</h1></center>
+    <div class="add">
+        <form class="f" action="/signin" method="post">
+          <label for="name">UserName</label>
+          <input type="text" id="title" name="adminname" required>
+          <fieldset>
+            <legend style="color: blue; font-size: 30px; font-weight: 700;">Gender</legend>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" checked/>
+                <label for="dewey" checked>Male</label>
+              </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female"  />
+            <label for="huey">Female</label>
+          </div>
+        
+          
+          </fieldset>
+          <label for="email">Email</label>
+          <input type="email" id="snippet" name="email" required>
+          <label for="password">password</label>
+          <input type="password" name="password" id="pwd">
+          <label for="address">Address</label>
+          <textarea name="address" id="address" style="font-size: 20px; border-radius: 20px; outline: none; border: none; padding: 30px;"></textarea>
+          <label for="number"> Phone No</label>
+          <input type="text" name="phonenumber" id="number" maxlength="10">
+    
+         <div class="sub">
+          <button type="submit">Submit</button>
+
+          <a href="./login">GO to LOGIN>>>></a>
+         </div> 
+        </form>
+      </div>
+</body>
+<%- include("./partials/footer.ejs") %>
+</html>

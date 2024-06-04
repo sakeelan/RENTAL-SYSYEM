@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="styles/booking.css">
+
+<%- include("./partials/header.ejs") %>
+<%- include("./partials/nav.ejs") %>
+<body>
+    <center><h1>BOOK YOUR FLAT...!</h1></center>
+    <div class="add">
+        <form class="f" action="/book" method="post">
+          <label for="name">NAME</label>
+          <input type="text" id="title" name="name" required>
+          
+          <label for="name">PHONE NO</label>
+          <input type="text" id="title" name="phonenumber" required maxlength="10">
+
+
+          <label for="">CATAGORY</label>
+          <select name="catagory" id="cata">
+            <option value="1BHK" >1BHK</option>
+            <option value="2BHK" >2BHK</option>
+            <option value="3BHK" >3BHK</option>
+
+          </select>
+          
+          <label for="">FLOOR</label>
+          <select name="floor" id="floor">
+            <option value="1FLOOR">1FLOOR</option>
+            <option value="2FLOOR" >2FLOOR</option>
+            <option value="3FLOOR" >3FLOOR</option>
+            <option value="4FLOOR" >4FLOOR</option>
+            <option value="5FLOOR" >5FLOOR</option>
+            
+
+          </select>
+          <label for="">FLAT NUMBER</label>
+          <select name="flat" id="floor">
+            <option value="101FLAT" >101FLAT</option>
+            <option value="102FLAT" >102FLAT</option>
+            <option value="103FLAT" >103FLAT</option>
+            <option value="104FLAT" >104FLAT</option>
+            <option value="105FLAT" >105FLAT</option>
+           
+           
+
+          </select>
+          <label for="price">RENT PRICE</label>
+          <input type="number" name="rent" id="price">
+         
+    
+         <div class="sub">
+          <button type="submit">BOOKING</button></div></form>
+</body>
+<%- include("./partials/footer.ejs") %>
+
+</html>
